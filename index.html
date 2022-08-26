@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon">
+  <title>Interactive Rating</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"  rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+
+</head>
+<body>
+  <main class="container">
+      <div class="card">
+        <img class="icon-star" src="src/img/icon-star.svg" alt="icon star">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <ul>
+        <li><button class="ball">1</button></li>
+        <li><button class="ball">2</button></li>
+        <li><button class="ball">3</button></li>
+        <li><button class="ball">4</button></li>
+        <li><button class="ball">5</button></li>
+      </ul>
+      <input class="button" id="submit-rating" type="button" value="submit">
+    </div>
+
+    <div class="thank-you image-cell hidden">
+      <img class="image-cell" src="src/img/illustration-thank-you.svg" alt="">
+      <div class="selector">
+        <p class="selector-text">You selected <span id="rating" style="display: inline-block; margin: 0 0.3rem">1</span> out of 5</p>
+      </div>
+      <h1>Thank you!</h1>
+      <p class="description">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+
+      <button class="button" id="go-back">Go back</button>
+    </div>
+  </main>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>

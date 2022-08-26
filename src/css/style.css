@@ -1,0 +1,153 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(215, 22%, 15%);
+  --fundo-bg: hsl(216, 12%, 8%);
+}
+
+
+body {
+  background-color: var(--fundo-bg);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 390px;
+  height: 395px;
+  background-color: var(--dark-blue);
+  border-radius: 1.8rem;
+  padding: 1.8rem;
+}
+
+.container .icon-star {
+  padding: 0.9rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 26px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+p {
+  font-size: 14px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+
+ul > li {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color:#262F38;
+  color:hsl(217, 12%, 63%);
+  margin: 25px auto;
+  cursor: pointer;
+}
+
+ul > li > .ball {
+  background-color: hsl(213, 19%, 18%);
+  width: 3rem;
+  height: 3rem;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding-top: 0.3rem;
+  transition: 0.3s;
+}
+.ball:hover {
+  background-color: var(--light-grey);
+}
+
+.ball:focus {
+  background-color: var(--orange);
+}
+
+.button {
+  padding: 0.8rem;
+  width: 95%;
+  margin: 5px auto;
+  display: block;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--orange);
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: .3s;
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.thank-you {
+  width: 390px;
+  height: 395px;
+  background-color: var(--dark-blue);
+  border-radius: 1.8rem;
+  padding: 1.8rem;
+}
+
+.hidden {
+  display: none;
+  position: absolute;
+}
+  
+.image-cell {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+  
+.selector {
+  width: 60%;
+  border-radius: 15px;
+  margin: auto;
+  background-color: #262F38;
+  margin-bottom: 30px;
+}
+  
+.selector-text {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  color: var(--orange);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.description {
+  letter-spacing: 0.3px;
+}

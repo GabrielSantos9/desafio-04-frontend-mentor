@@ -1,0 +1,13 @@
+@media (max-width: 375px) {
+  .card {
+    width: 335px;
+  }
+
+  .thank-you {
+    width: 350px;
+  }
+
+  .selector-text {
+    font-size: 13px;
+  }
+}
